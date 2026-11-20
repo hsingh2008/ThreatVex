@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Theme Initial Script to avoid flash on reload -->
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('threatvex_theme');
+          if (saved === 'light') {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.classList.add('light');
+          } else {
+            document.documentElement.classList.remove('light');
+            document.documentElement.classList.add('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+    
+    <!-- Primary Meta Tags -->
+    <title>ThreatVex | Detect Early. Stay Protected. Online Threat Intelligence & Safety</title>
+    <meta name="title" content="ThreatVex | Detect Early. Stay Protected. Online Threat Intelligence & Safety" />
+    <meta name="description" content="ThreatVex is an advanced, privacy-first cybersecurity platform providing instant client-side phishing URL scanning, scam message detection, password strength evaluation, and QR/UPI payment fraud verification." />
+    <meta name="keywords" content="cybersecurity, phishing scanner, scam detector, password analyzer, UPI fraud detector, QR code safety, online protection, ThreatVex" />
+    <meta name="author" content="ThreatVex Security Labs" />
+    <meta name="theme-color" content="#0a0f1d" />
+
+    <!-- Canonical URL placeholder -->
+    <link rel="canonical" href="https://threatvex.example.com/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://threatvex.example.com/" />
+    <meta property="og:title" content="ThreatVex | Detect Early. Stay Protected." />
+    <meta property="og:description" content="Verify suspicious URLs, analyze deceptive SMS/WhatsApp scam messages, audit password strength, and decode QR & UPI payment intents safely in your browser." />
+    <meta property="og:image" content="/og-image.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://threatvex.example.com/" />
+    <meta property="twitter:title" content="ThreatVex | Detect Early. Stay Protected." />
+    <meta property="twitter:description" content="Privacy-first client-side cybersecurity suite. Fast phishing URL inspection, scam text heuristics, password entropy testing, and QR/UPI security." />
+    <meta property="twitter:image" content="/og-image.png" />
+
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-navy-950 text-slate-100 antialiased selection:bg-teal-neon selection:text-navy-950 min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
